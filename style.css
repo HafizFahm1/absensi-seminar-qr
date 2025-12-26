@@ -1,0 +1,87 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{display:flex;background:#f4f6fb}
+
+/* LOGIN */
+.login-page{justify-content:center;align-items:center;height:100vh}
+.login-box{
+  background:#fff;padding:30px;width:320px;text-align:center;
+  border-radius:15px;box-shadow:0 15px 30px rgba(0,0,0,.15)
+}
+.login-box input{width:100%;padding:10px;margin:10px 0}
+.login-box button{
+  width:100%;padding:10px;border:none;border-radius:10px;
+  background:#2563eb;color:#fff
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:220px;background:#1e293b;color:#fff;
+  min-height:100vh;padding:20px
+}
+.sidebar h2{margin-bottom:30px}
+.sidebar a{
+  display:block;padding:12px;border-radius:10px;
+  cursor:pointer;margin-bottom:10px
+}
+.sidebar a:hover{background:#2563eb}
+
+/* MAIN */
+.main{flex:1;padding:25px}
+.page{display:none}
+.page.active{display:block}
+.sub{color:#666;margin-bottom:20px}
+
+/* STATS */
+.stat-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px
+}
+.stat-card{
+  padding:20px;border-radius:15px;color:#fff;
+  display:flex;justify-content:space-between;align-items:center
+}
+.stat-card span{font-size:30px}
+.blue{background:#2563eb}
+.green{background:#16a34a}
+.orange{background:#f97316}
+.purple{background:#7c3aed}
+
+/* EVENT */
+.event-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px
+}
+.event-card{
+  background:#fff;border-radius:15px;overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.12)
+}
+.event-card img{width:100%;height:140px;object-fit:cover}
+.event-card h3,.event-card p{padding:10px}
+.event-card button{
+  margin:10px;width:calc(100% - 20px);
+  padding:10px;border:none;border-radius:10px;
+  background:#2563eb;color:#fff
+}
+
+/* PAYMENT */
+.pay-card,.cert-card{
+  background:#fff;padding:20px;border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  max-width:400px
+}
+.badge{
+  display:inline-block;padding:5px 12px;
+  border-radius:20px;color:#fff;margin:10px 0
+}
+.lunas{background:#16a34a}
+
+/* MODAL */
+.modal{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.5)
+}
+.modal-box{
+  background:#fff;width:420px;
+  margin:100px auto;padding:20px;
+  border-radius:15px;text-align:center
+}
